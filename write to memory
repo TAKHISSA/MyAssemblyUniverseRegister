@@ -1,0 +1,31 @@
+.data
+
+	dizi : .space 40
+	alt : .asciiz "\n"
+	e1 : .asciiz "Bir text gir "
+	
+	alinan: .space  50
+
+.text
+main:
+
+
+
+li $v0,4
+la $a0,e1
+syscall
+
+li $v0,4
+la $a0,alt
+syscall
+
+li $v0,8
+la $a0,alinan
+syscall
+
+
+
+
+
+li $v0,10
+syscall
