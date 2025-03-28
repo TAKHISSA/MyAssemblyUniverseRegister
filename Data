@@ -1,0 +1,24 @@
+.data
+
+sayi1: .word 129 
+
+
+.text
+
+main:
+
+la $s0,sayi1
+lw $t0,0($s0)
+
+li $t1,-2179
+sw $t1,4($s0)
+
+add $s1,$zero,0x10010008
+li $t2,506
+sw $t2,0($s1)
+
+
+
+
+li $v0,10
+syscall
