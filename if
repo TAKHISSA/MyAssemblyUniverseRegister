@@ -1,0 +1,23 @@
+#sablon
+
+.data
+
+.text
+
+main:
+
+li $s1,4
+li $s2,6
+li $s3,5
+li $s4,5
+
+bne  $s3, $s4, Else                   
+add  $s0, $s1, $s2     						
+  j Exit	          						
+Else:	sub  $s0, $s1, $s2   					
+Exit:
+
+
+#finish
+li $v0,10
+syscall
